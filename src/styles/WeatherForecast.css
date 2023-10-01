@@ -1,0 +1,39 @@
+.weather-forecast-input {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 1px #ada666 solid;
+}
+
+.weather-forecast-input div {
+    display: inline;
+    padding: 8px;
+}
+
+select {
+    background: #202020;
+    color: #ada666;
+    border: 1px #ada666 solid;
+    border-radius: 5px;
+}
+
+select:hover {
+    background: #ada666;
+    color: #202020;
+    border: 1px #202020 solid;
+    border-radius: 5px;
+}
+
+button {
+    background: #202020;
+    color: #ada666;
+    border: 1px #ada666 solid;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ada666;
+    color: #202020;
+    border: 1px #202020 solid;
+    border-radius: 5px;
+}
