@@ -1,13 +1,18 @@
-.weather-forecast-input {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+button {
+    background: #202020;
+    padding: 4px 12px;
+    color: #ada666;
     border: 1px #ada666 solid;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.weather-forecast-input div {
-    display: inline;
-    padding: 8px;
+button:hover {
+    background: #ada666;
+    color: #202020;
+    border: 1px #202020 solid;
+    border-radius: 5px;
 }
 
 select {
@@ -15,6 +20,8 @@ select {
     color: #ada666;
     border: 1px #ada666 solid;
     border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 select:hover {
@@ -24,16 +31,46 @@ select:hover {
     border-radius: 5px;
 }
 
-button {
-    background: #202020;
-    color: #ada666;
+.weather-forecast-input {
+    display: flex;
+    justify-content: center;
     border: 1px #ada666 solid;
-    border-radius: 5px;
+    margin-top: 10px;
 }
 
-button:hover {
-    background: #ada666;
-    color: #202020;
-    border: 1px #202020 solid;
-    border-radius: 5px;
+.weather-forecast-input div {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.weather-forecast-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.weather-forecast-checkbox + label {
+    cursor: pointer;
+}
+
+.weather-forecast-checkbox+label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 0.1em;
+    background-size: 100% 100%;
+    background-image: url("../media/elements/checkbox-unchecked.svg");
+}
+
+.weather-forecast-checkbox:checked+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 0.1em;
+    background-size: 100% 100%;
+    background-image: url("../media/elements/checkbox-check.svg")
 }

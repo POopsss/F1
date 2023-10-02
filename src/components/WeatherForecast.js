@@ -44,8 +44,8 @@ function WeatherForecast() {
                     </select>
                 </div>
                 <div>
-                    <input id="weather-forecast-checkbox" type="checkbox" />
-                    <label>На ближайшие 5 дней.</label>
+                    <input className="weather-forecast-checkbox" id="weather-forecast-checkbox" type="checkbox" />
+                    <label for="weather-forecast-checkbox" >На ближайшие 5 дней.</label>
                 </div>
                 <div>
                     <button id="weather-forecast-button" onClick={getLocation}>КлиК</button>
